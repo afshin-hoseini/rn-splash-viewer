@@ -24,6 +24,11 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  componentDidMount() {
+
+    SplashViewer.hide();
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -40,11 +45,11 @@ export default class App extends Component<Props> {
         <Button title="Show Splash" onPress={()=>{
 
           SplashViewer.show();
-
+          
           setTimeout(()=>{
 
             SplashViewer.hide();
-
+      
           }, 4000);
         }} />
       </View>

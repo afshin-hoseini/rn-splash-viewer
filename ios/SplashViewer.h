@@ -7,5 +7,6 @@
 
 @interface SplashViewer : NSObject <RCTBridgeModule>
 
+  +(void) show;
 @end
   

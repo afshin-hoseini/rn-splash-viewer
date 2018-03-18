@@ -53,5 +53,5 @@ buck-out/
 */fastlane/screenshots
 
 #Vscode
-.vscode/*
-lib/*
+*/.vscode/.react
+*/.vscode/launch.json

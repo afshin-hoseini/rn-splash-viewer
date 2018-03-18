@@ -1,6 +1,10 @@
 package com.example;
 
+import android.os.Bundle;
+
 import com.facebook.react.ReactActivity;
+
+import ir.afshin.SplashViewerModule;
 
 public class MainActivity extends ReactActivity {
 
@@ -11,5 +15,11 @@ public class MainActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
         return "example";
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        SplashViewerModule.showSplash(this);
     }
 }
