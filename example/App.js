@@ -45,11 +45,11 @@ export default class App extends Component<Props> {
         <Button title="Show Splash" onPress={()=>{
 
           SplashViewer.show();
-
+          
           setTimeout(()=>{
 
             SplashViewer.hide();
-
+      
           }, 4000);
         }} />
       </View>
