@@ -24,6 +24,11 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  componentDidMount() {
+
+    SplashViewer.hide();
+  }
   render() {
     return (
       <View style={styles.container}>
